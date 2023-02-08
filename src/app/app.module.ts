@@ -1,8 +1,10 @@
 import { NgModule } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { ListaEstudiantesComponent } from './components/lista-estudiantes/lista-estudiantes.component';
+import { FormularioReactivoComponent } from './components/formulario-reactivo/formulario-reactivo.component';
+
 
 
 
@@ -11,14 +13,17 @@ import { ListaEstudiantesComponent } from './components/lista-estudiantes/lista-
 @NgModule({
   declarations: [
     AppComponent,
-    ListaEstudiantesComponent,
+    FormularioReactivoComponent,
+  
     
     
     
    
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    ReactiveFormsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
